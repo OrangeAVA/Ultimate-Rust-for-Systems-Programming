@@ -1,6 +1,6 @@
 = Mastering Rust for System Programming
 
-[cols="9"]
+[cols="4"]
 
 |===
 
