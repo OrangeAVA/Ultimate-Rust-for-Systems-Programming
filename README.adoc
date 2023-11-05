@@ -4,7 +4,7 @@
 
 |===
 
-| link:https://github.com/wiseaidev[image:https://img.shields.io/badge/Work%20In%20Progress-orange?style=for-the-badge[Work In Progress]]
+| link:https://github.com/wiseaidev[image:https://img.shields.io/badge/Work%20In%20Progress-red?style=flat-square[Work In Progress]]
 
 | link:https://www.rust-lang.org/[image:https://img.shields.io/badge/Made%20with-Rust-1f425f.svg?logo=rust&logoColor=white[Made with Rust]]
 
