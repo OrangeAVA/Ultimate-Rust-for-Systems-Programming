@@ -98,6 +98,25 @@ jupyter notebook
 | link:./chapter-1/chapter-1.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-1/chapter-1.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 2
+| Basics of Rust
+| TODO
+|
+▪ Introduction to variables and data types in Rust.
+
+▪ Control flow using if, else, loops, and match.
+
+▪ Defining functions and working with closures.
+
+▪ Understanding ownership, borrowing, and lifetimes in Rust.
+
+▪ Highlighting Rust's memory safety features.
+
+▪ Writing memory-safe code with the help of the borrow checker.
+
+| link:./chapter-2/chapter-2.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-2/chapter-2.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
