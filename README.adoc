@@ -117,6 +117,21 @@ jupyter notebook
 | link:./chapter-2/chapter-2.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-2/chapter-2.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 3
+| Advanced Concepts - Traits and Generics
+| TODO
+|
+▪ Understanding the concept of traits and their role in code reuse.
+
+▪ Implementing traits for user-defined data structures.
+
+▪ Working with generic functions and data structures in Rust.
+
+▪ Exploring trait bounds and associated types for increased generality.
+
+| link:./chapter-3/chapter-3.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-3/chapter-3.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
