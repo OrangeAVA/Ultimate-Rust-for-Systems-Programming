@@ -134,6 +134,21 @@ jupyter notebook
 
 |===
 
+| 4
+| Rust Built-In Data Structures
+| TODO
+|
+▪ Working with Rust's array-like data structures: Vectors, Arrays, Tuples, and Slices.
+
+▪ Introduction to Rust's hash-based collections: HashMap and HashSet.
+
+▪ Demonstrating common operations and manipulations with Rust collections and more.
+
+| link:./chapter-4/chapter-4.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-4/chapter-4.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
+|===
+
 === Contributing
 
 We welcome contributions to enhance this repository! To contribute, please follow the link:./CONTRIBUTING.adoc[`CONTRIBUTING.adoc`] file guidelines (TODO). Thank you for helping make this project better!
