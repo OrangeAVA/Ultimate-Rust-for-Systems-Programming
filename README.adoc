@@ -145,6 +145,19 @@ jupyter notebook
 | link:./chapter-4/chapter-4.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-4/chapter-4.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 5
+| Error Handling and Recovery
+| TODO
+|
+▪ Dealing with errors using Result and Option in Rust.
+
+▪ Techniques for error propagation and handling multiple errors.
+
+▪ Creating custom error types to enhance error messages.
+
+| link:./chapter-5/chapter-5.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-5/chapter-5.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
