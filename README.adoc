@@ -171,6 +171,19 @@ jupyter notebook
 | link:./chapter-6/chapter-6.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-6/chapter-6.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 7
+| Managing Concurrency
+| TODO
+|
+▪ Understanding concurrent programming with threads and synchronization.
+
+▪ Introducing concurrent data structures: Mutex and RwLock.
+
+▪ Techniques for thread communication and message passing in Rust.
+
+| link:./chapter-7/chapter-7.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-7/chapter-7.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
