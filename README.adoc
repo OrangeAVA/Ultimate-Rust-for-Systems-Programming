@@ -184,6 +184,17 @@ jupyter notebook
 | link:./chapter-7/chapter-7.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-7/chapter-7.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 8
+| CLI Programs
+| TODO
+|
+▪ Building a command-line find and replace utility using Rust.
+
+▪ Working with command-line arguments and parsing input.
+
+| link:./chapter-8/chapter-8.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-8/chapter-8.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
