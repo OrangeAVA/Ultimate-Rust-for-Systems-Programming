@@ -221,6 +221,19 @@ jupyter notebook
 | link:./chapter_10/chapter-10.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_10/chapter-10.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 11
+| Unit Testing in Rust
+| TODO
+|
+▪ Writing test functions and test modules in Rust.
+
+▪ Executing tests and understanding test results.
+
+▪ Practicing Test-driven development (TDD) in Rust
+
+| link:./chapter_11/chapter-11.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_11/chapter-11.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
