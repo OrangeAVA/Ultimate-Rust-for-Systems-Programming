@@ -208,6 +208,19 @@ jupyter notebook
 | link:./chapter-9/chapter-9.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-9/chapter-9.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 10
+| Iterators and Closures
+| TODO
+|
+▪ Working with iterators for efficient data processing in Rust.
+
+▪ Writing closures and capturing variables in Rust.
+
+▪ Applying iterators and closures to practical examples.
+
+| link:./chapter-10/chapter-10.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-10/chapter-10.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
