@@ -272,6 +272,17 @@ jupyter notebook
 | link:./chapter_13/chapter-13.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_13/chapter-13.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 14
+| Asynchronous Programming
+| TODO
+|
+▪ Learning asynchronous programming with async/await in Rust.
+
+▪ Utilizing the Tokio library for building asynchronous applications.
+
+| link:./chapter_14/chapter-14.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_14/chapter-14.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
