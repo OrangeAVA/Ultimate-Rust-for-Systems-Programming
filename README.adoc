@@ -247,6 +247,31 @@ jupyter notebook
 | link:./chapter_12/chapter-12.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
 | link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_12/chapter-12.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
 
+| 13
+| Unsafe Code
+| TODO
+|
+▪ What is unsafe code in Rust and when is it necessary?
+
+▪ Scenarios where developers might opt for unsafe blocks.
+
+▪ Balancing performance and safety considerations.
+
+▪ Real-world examples showcasing the need for unsafe code.
+
+▪ Best practices for using unsafe code.
+
+▪ Memory safety violations in unsafe code.
+
+▪ Real-World Examples Showcasing the Need for Unsafe Code.
+
+▪ Case studies highlighting real-world consequences.
+
+▪ Risks associated with common unsafe coding practices.
+
+| link:./chapter_13/chapter-13.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_13/chapter-13.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+
 |===
 
 === Contributing
