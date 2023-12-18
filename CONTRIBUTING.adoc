@@ -1,0 +1,74 @@
+= Contribution Guidelines 👷
+
+:toc:
+
+== Welcome 👋
+
+Thank you for considering contributing to the Rust Lang Book repository! Your contributions, no matter how big or small, play a crucial role in improving the quality and content of the book. We appreciate your effort and dedication to making this resource better for the Rust community.
+
+== How to Contribute 🚀
+
+Contributing to the Rust Lang Book repository is easy! Follow these steps to get started:
+
+=== 1. Fork the Repository 🍴
+
+Start by forking the repository to your GitHub account. This will create a copy of the repository under your account, allowing you to make changes without affecting the main project.
+
+=== 2. Clone the Repository 💻
+
+Clone the forked repository to your local machine using the following command:
+
+[source,shell]
+----
+$ git clone https://github.com/your-username/rust-lang-book.git
+----
+
+Replace "your-username" with your GitHub username.
+
+=== 3. Create a Branch for Local Development 🌿
+
+Create a new branch for your local development with a descriptive name for your bug fix or feature:
+
+[source,shell]
+----
+$ git checkout -b name-of-your-bugfix-or-feature
+----
+
+Now you can make your changes locally.
+
+=== 4. Make Changes ✏️
+
+Make the desired changes to the content or address any issues you've identified. Ensure that your changes align with the project's goals and coding standards.
+
+=== 5. Test Your Changes 🧪
+
+If applicable, test your changes to ensure they work as expected. This is especially important if you're updating or adding code in the Jupyter notebooks.
+
+=== 6. Commit Your Changes ✅
+
+Commit your changes with clear and concise commit messages. This helps maintain a clean and readable version history.
+
+[source,shell]
+----
+$ git add .
+$ git commit -m "Brief description of the changes"
+----
+
+=== 7. Push Changes 📌
+
+Push your changes to your forked repository on GitHub:
+
+[source,shell]
+----
+$ git push origin name-of-your-bugfix-or-feature
+----
+
+=== 8. Create a Pull Request 🔀
+
+Navigate to your forked repository on GitHub and create a pull request (PR) to merge your changes into the main repository. Provide a detailed description of your changes, and our team will review your PR as soon as possible.
+
+== Additional Contribution Opportunities 💡
+
+Aside from content improvements, you can also contribute by keeping the libraries code in each Jupyter notebook up-to-date. Ensure that dependencies and libraries are bumped to the latest versions for a better learning experience.
+
+Thank you for your contribution to the Rust Lang Book repository! 🎉

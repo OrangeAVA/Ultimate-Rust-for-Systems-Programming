@@ -26,7 +26,8 @@
 
 == Welcome
 
-This collection of Jupyter notebooks provides an in-depth journey into the realm of system programming with Rust. Empowered by a Rust kernel at its core, you have the opportunity to delve deeply into the complexities of system programming, capitalizing on the full potential of the Rust programming language. Augmented by a diverse range of Rust libraries, including [TODO], you can seamlessly work with systems at a lower level using Rust. Whether you're an experienced developer or just kicking off your programming journey, these notebooks offer a robust and invaluable resource for mastering system programming in Rust.
+This collection of Jupyter notebooks provides an in-depth journey into the realm of system programming with Rust. Empowered by a Rust kernel at its core, you have the opportunity to delve deeply into the complexities of system programming, capitalizing on the full potential of the Rust programming language. Augmented by a diverse range of Rust libraries, including link:https://github.com/serde-rs/serde[`serde`], link:https://github.com/serde-rs/json[`serde-json`], link:https://github.com/dtolnay/anyhow[`anyhow`], link:https://github.com/dtolnay/thiserror[`thiserror`], link:https://github.com/dtolnay/thiserror[`thiserror`], link:https://github.com/seanmonstar/reqwest[`reqwest`], link:https://github.com/tokio-rs/tokio[`tokio`], link:https://github.com/seanmonstar/warp[`warp`], link:https://github.com/BurntSushi/rust-csv[`rust-csv`], link:https://github.com/clap-rs/clap[`clap`], link:https://github.com/Detegr/rust-ctrlc[`rust-ctrlc`], link:https://github.com/proptest-rs/proptest[`proptest`], link:https://github.com/crossbeam-rs/crossbeam[`crossbeam`], link:https://github.com/async-rs/async-std[`async-std`], link:https://github.com/rust-lang/regex[`regex`], link:https://github.com/chronotope/chrono[`chrono`], link:https://github.com/golemparts/rppal[`rppal`], link:https://github.com/rust-embedded/rust-i2cdev[`rust-i2cdev`], link:https://github.com/danburkert/fs2-rsv[`fs2-rsv`], link:https://github.com/danburkert/memmap-rs[`memmap-rs`], link:https://github.com/hyperium/hyper[`hyper`], link:https://github.com/rust-random/rand[`rand`], link:https://github.com/rust-num/num[`num`], link:https://github.com/Stebalien/tempfile[`tempfile`], link:https://github.com/la10736/rstest[`rstest`], link:https://github.com/asomers/mockall[`mockall`], link:https://github.com/snapview/tokio-tungstenite[`tokio-tungstenite`], link:https://github.com/rust-lang/futures-rs[`futures-rs`], link:https://github.com/rusqlite/rusqlite[`rusqlite`], link:https://github.com/twistedfall/opencv-rust[`opencv-rust`]
+, you can seamlessly work with systems at a lower level using Rust. Whether you're an experienced developer or just kicking off your programming journey, these notebooks offer a robust and invaluable resource for mastering system programming in Rust.
 
 === Installation
 
@@ -76,11 +77,11 @@ jupyter notebook
 === Chapters
 
 |===
-| ID | Chapter | Read Time (mins) | Topics | Open on GitHub | Launch on Binder
+| ID | Chapter | NB Pages | Topics | Open on GitHub | Launch on Binder
 
 | 1
 | Introduction to Rust and Setup
-| TODO
+| 44
 |
 ▪ What is Rust and its significance in system programming?
 
@@ -100,7 +101,7 @@ jupyter notebook
 
 | 2
 | Basics of Rust
-| TODO
+| 38
 |
 ▪ Introduction to variables and data types in Rust.
 
@@ -119,7 +120,7 @@ jupyter notebook
 
 | 3
 | Advanced Concepts - Traits and Generics
-| TODO
+| 32
 |
 ▪ Understanding the concept of traits and their role in code reuse.
 
@@ -134,7 +135,7 @@ jupyter notebook
 
 | 4
 | Rust Built-In Data Structures
-| TODO
+| 74
 |
 ▪ Working with Rust's array-like data structures: Vectors, Arrays, Tuples, and Slices.
 
@@ -147,7 +148,7 @@ jupyter notebook
 
 | 5
 | Error Handling and Recovery
-| TODO
+| 35
 |
 ▪ Dealing with errors using Result and Option in Rust.
 
@@ -160,7 +161,7 @@ jupyter notebook
 
 | 6
 | Memory Management and Pointers
-| TODO
+| 43
 |
 ▪ Understanding stack and heap memory allocation in Rust.
 
@@ -173,7 +174,7 @@ jupyter notebook
 
 | 7
 | Managing Concurrency
-| TODO
+| 42
 |
 ▪ Understanding concurrent programming with threads and synchronization.
 
@@ -186,7 +187,7 @@ jupyter notebook
 
 | 8
 | CLI Programs
-| TODO
+| 32
 |
 ▪ Building a command-line find and replace utility using Rust.
 
@@ -197,7 +198,7 @@ jupyter notebook
 
 | 9
 | Working with Devices I/O
-| TODO
+| 52
 |
 ▪ Reading from and writing to files in Rust.
 
@@ -210,7 +211,7 @@ jupyter notebook
 
 | 10
 | Iterators and Closures
-| TODO
+| 50
 |
 ▪ Working with iterators for efficient data processing in Rust.
 
@@ -223,7 +224,7 @@ jupyter notebook
 
 | 11
 | Unit Testing in Rust
-| TODO
+| 32
 |
 ▪ Writing test functions and test modules in Rust.
 
@@ -236,7 +237,7 @@ jupyter notebook
 
 | 12
 | Network Programming
-| TODO
+| 37
 |
 ▪ Building networked applications with Rust.
 
@@ -249,7 +250,7 @@ jupyter notebook
 
 | 13
 | Unsafe Code
-| TODO
+| 35
 |
 ▪ What is unsafe code in Rust and when is it necessary?
 
@@ -274,7 +275,7 @@ jupyter notebook
 
 | 14
 | Asynchronous Programming
-| TODO
+| 31
 |
 ▪ Learning asynchronous programming with async/await in Rust.
 
@@ -287,7 +288,7 @@ jupyter notebook
 
 === Contributing
 
-We welcome contributions to enhance this repository! To contribute, please follow the link:./CONTRIBUTING.adoc[`CONTRIBUTING.adoc`] file guidelines (TODO). Thank you for helping make this project better!
+We welcome contributions to enhance this repository! To contribute, please follow the link:./CONTRIBUTING.adoc[`CONTRIBUTING.adoc`] file guidelines. Thank you for helping make this project better!
 
 === License
 
