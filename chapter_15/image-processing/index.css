@@ -1,0 +1,32 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #61dafb;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+}
+
+canvas {
+  border: 1px solid #333333;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

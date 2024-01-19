@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Request Handling with Rust and WebAssembly</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Request Handling with Rust and WebAssembly</h1>
+      <button onclick="handleNetworkRequest()">Fetch</button>
+      <div id="result"></div>
+    </div>
+    <script type="module" defer>
+      import init, { get_request } from "./pkg/networking.js";
+
+      async function loadWasm() {
+        try {
+          await init();
+          window.handleNetworkRequest = handleNetworkRequest;
+        } catch (error) {
+          console.error("Failed to load WebAssembly module:", error);
+        }
+      }
+
+      async function handleNetworkRequest() {
+        const resultDiv = document.getElementById("result");
+
+        // Call the Rust WebAssembly function for network request handling
+        const url = "https://jsonplaceholder.typicode.com/posts/1";
+        const response = await get_request(url);
+
+        // Display the network request result
+        resultDiv.innerText = `Response: ${response}`;
+      }
+
+      loadWasm();
+    </script>
+  </body>
+</html>
