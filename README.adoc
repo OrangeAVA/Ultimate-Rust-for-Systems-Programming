@@ -310,7 +310,7 @@ jupyter notebook
 
 ▪ Real-world Applications of Rust and WebAssembly.
 
-| link:https://wasm-crypto.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]]
+| link:https://wasm-crypto.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]] link:https://real-time-wasm.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]]
 | link:https://wasm-network.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]]
 | link:https://img-process.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]]
 
