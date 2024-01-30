@@ -1,0 +1,329 @@
+= Mastering Rust for System Programming
+
+[cols="4"]
+
+|===
+
+| link:https://github.com/wiseaidev[image:https://img.shields.io/badge/Work%20In%20Progress-red?style=flat-square[Work In Progress]]
+
+| link:https://www.rust-lang.org/[image:https://img.shields.io/badge/Made%20with-Rust-1f425f.svg?logo=rust&logoColor=white[Made with Rust]]
+
+| link:https://www.latex-project.org/[image:https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg?logo=latex&logoColor=white[Made with LaTeX]]
+
+| link:https://jupyter.org/[image:https://img.shields.io/badge/Jupyter-Notebook-blue.svg?logo=Jupyter&logoColor=orange[Jupyter Notebook]]
+
+| link:https://reddit.com/submit?url=https://github.com/wiseaidev/rust-lang-book&amp;title=%F0%9F%93%9A%20Accompanying%20code%20snippets%20for%20mastering%20rust%20for%20system%20programming%20book%20%F0%9F%9A%80[image:https://img.shields.io/badge/share%20on-reddit-red?style=flat-square&logo=reddit&amp;[Share On Reddit]]
+
+| link:https://news.ycombinator.com/submitlink?u=https://github.com/wiseaidev/rust-lang-book&amp;t=%F0%9F%93%9A%20Accompanying%20code%20snippets%20for%20mastering%20rust%20for%20system%20programming%20book%20%F0%9F%9A%80[image:https://img.shields.io/badge/share%20on-hacker%20news-orange?style=flat-square&logo=ycombinator&amp;[Share On Ycombinator]]
+
+| link:https://twitter.com/share?url=https://github.com/wiseaidev/rust-lang-book&amp;text=%F0%9F%93%9A%20Accompanying%20code%20snippets%20for%20mastering%20rust%20for%20system%20programming%20book%20%F0%9F%9A%80[image:https://img.shields.io/badge/share%20on-twitter-03A9F4?style=flat-square&logo=twitter&amp;[Share On Twitter]]
+
+| link:https://www.facebook.com/sharer/sharer.php?u=https://github.com/wiseaidev/rust-lang-book[image:https://img.shields.io/badge/share%20on-facebook-1976D2?style=flat-square&logo=facebook&amp;[Share On Facebook]]
+
+| link:https://www.linkedin.com/shareArticle?url=https://github.com/wiseaidev/rust-lang-book&amp;title=%F0%9F%93%9A%20Accompanying%20code%20snippets%20for%20mastering%20rust%20for%20system%20programming%20book%20%F0%9F%9A%80[image:https://img.shields.io/badge/share%20on-linkedin-3949AB?style=flat-square&logo=linkedin&amp;[Share On Linkedin]]
+
+|===
+
+== Welcome
+
+This collection of Jupyter notebooks provides an in-depth journey into the realm of system programming with Rust. Empowered by a Rust kernel at its core, you have the opportunity to delve deeply into the complexities of system programming, capitalizing on the full potential of the Rust programming language. Augmented by a diverse range of Rust libraries, including link:https://github.com/serde-rs/serde[`serde`], link:https://github.com/serde-rs/json[`serde-json`], link:https://github.com/dtolnay/anyhow[`anyhow`], link:https://github.com/dtolnay/thiserror[`thiserror`], link:https://github.com/seanmonstar/reqwest[`reqwest`], link:https://github.com/tokio-rs/tokio[`tokio`], link:https://github.com/seanmonstar/warp[`warp`], link:https://github.com/BurntSushi/rust-csv[`rust-csv`], link:https://github.com/clap-rs/clap[`clap`], link:https://github.com/Detegr/rust-ctrlc[`rust-ctrlc`], link:https://github.com/proptest-rs/proptest[`proptest`], link:https://github.com/crossbeam-rs/crossbeam[`crossbeam`], link:https://github.com/async-rs/async-std[`async-std`], link:https://github.com/rust-lang/regex[`regex`], link:https://github.com/chronotope/chrono[`chrono`], link:https://github.com/golemparts/rppal[`rppal`], link:https://github.com/rust-embedded/rust-i2cdev[`rust-i2cdev`], link:https://github.com/danburkert/fs2-rsv[`fs2-rsv`], link:https://github.com/danburkert/memmap-rs[`memmap-rs`], link:https://github.com/hyperium/hyper[`hyper`], link:https://github.com/rust-random/rand[`rand`], link:https://github.com/rust-num/num[`num`], link:https://github.com/Stebalien/tempfile[`tempfile`], link:https://github.com/la10736/rstest[`rstest`], link:https://github.com/asomers/mockall[`mockall`], link:https://github.com/snapview/tokio-tungstenite[`tokio-tungstenite`], link:https://github.com/rust-lang/futures-rs[`futures-rs`], link:https://github.com/rusqlite/rusqlite[`rusqlite`], link:https://github.com/twistedfall/opencv-rust[`opencv-rust`]
+, you can seamlessly work with systems at a lower level using Rust. Whether you're an experienced developer or just kicking off your programming journey, these notebooks offer a robust and invaluable resource for mastering system programming in Rust.
+
+=== Installation
+
+To use the notebooks in this repository, you need to set up your environment. Follow these steps to get started:
+
+- Clone the repository to your local machine:
+
+[source,sh]
+----
+git clone https://github.com/wiseaidev/rust-lang-book.git
+----
+
+- Install the required dependencies and libraries. Make sure you have `Rust`, `Jupyter Notebook`, and `evcxr_jupyter` installed on your system.
+
+[source,sh]
+----
+# Install a Rust toolchain (e.g. nightly):
+[quote]
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain nightly
+
+# Install Jupyter Notebook:
+[quote]
+pip install notebook
+
+# Install evcxr_jupyter:
+[quote]
+cargo install evcxr_jupyter
+evcxr_jupyter --install
+----
+
+- Navigate to the cloned repository:
+
+[source,sh]
+----
+cd rust-lang-book
+----
+
+- Start Jupyter Notebook:
+
+[source,sh]
+----
+jupyter notebook
+----
+
+- Access the notebooks in your web browser by clicking on the notebook file you want to explore.
+
+=== Chapters
+
+|===
+| ID | Chapter | NB Pages | Topics | Open on GitHub | Launch on Binder | Launch on Colab
+
+| 1
+| Introduction to Rust and Setup
+| 44
+|
+▪ What is Rust and its significance in system programming?
+
+▪ Advantages of Rust over C/C++ for system development.
+
+▪ Exploring Rust's distinctive features and benefits.
+
+▪ Installing Rust on Windows, Linux, and MacOS.
+
+▪ Setting up the development environment, including IDEs and tools.
+
+▪ Writing the first Rust program: "Hello, World!"
+
+▪ Understanding and utilizing Cargo, Rust's package manager.
+| link:./chapter-1/chapter-1.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-1/chapter-1.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-1/chapter-1.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 2
+| Basics of Rust
+| 38
+|
+▪ Introduction to variables and data types in Rust.
+
+▪ Control flow using if, else, loops, and match.
+
+▪ Defining functions and working with closures.
+
+▪ Understanding ownership, borrowing, and lifetimes in Rust.
+
+▪ Highlighting Rust's memory safety features.
+
+▪ Writing memory-safe code with the help of the borrow checker.
+
+| link:./chapter-2/chapter-2.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-2/chapter-2.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-2/chapter-2.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 3
+| Advanced Concepts - Traits and Generics
+| 32
+|
+▪ Understanding the concept of traits and their role in code reuse.
+
+▪ Implementing traits for user-defined data structures.
+
+▪ Working with generic functions and data structures in Rust.
+
+▪ Exploring trait bounds and associated types for increased generality.
+
+| link:./chapter-3/chapter-3.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-3/chapter-3.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-3/chapter-3.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 4
+| Rust Built-In Data Structures
+| 74
+|
+▪ Working with Rust's array-like data structures: Vectors, Arrays, Tuples, and Slices.
+
+▪ Introduction to Rust's hash-based collections: HashMap and HashSet.
+
+▪ Demonstrating common operations and manipulations with Rust collections and more.
+
+| link:./chapter-4/chapter-4.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-4/chapter-4.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-4/chapter-4.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 5
+| Error Handling and Recovery
+| 35
+|
+▪ Dealing with errors using Result and Option in Rust.
+
+▪ Techniques for error propagation and handling multiple errors.
+
+▪ Creating custom error types to enhance error messages.
+
+| link:./chapter-5/chapter-5.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-5/chapter-5.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-5/chapter-5.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 6
+| Memory Management and Pointers
+| 43
+|
+▪ Understanding stack and heap memory allocation in Rust.
+
+▪ Introducing smart pointers: Box, Rc, and Arc.
+
+▪ An introduction to unsafe Rust and handling raw pointers.
+
+| link:./chapter-6/chapter-6.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-6/chapter-6.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-6/chapter-6.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 7
+| Managing Concurrency
+| 42
+|
+▪ Understanding concurrent programming with threads and synchronization.
+
+▪ Introducing concurrent data structures: Mutex and RwLock.
+
+▪ Techniques for thread communication and message passing in Rust.
+
+| link:./chapter-7/chapter-7.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-7/chapter-7.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-7/chapter-7.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 8
+| CLI Programs
+| 32
+|
+▪ Building a command-line find and replace utility using Rust.
+
+▪ Working with command-line arguments and parsing input.
+
+| link:./chapter-8/chapter-8.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-8/chapter-8.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-8/chapter-8.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 9
+| Working with Devices I/O
+| 52
+|
+▪ Reading from and writing to files in Rust.
+
+▪ Performing common filesystem operations.
+
+▪ Overview of working with hardware devices through Rust interfaces.
+
+| link:./chapter-9/chapter-9.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter-9/chapter-9.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter-9/chapter-9.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 10
+| Iterators and Closures
+| 50
+|
+▪ Working with iterators for efficient data processing in Rust.
+
+▪ Writing closures and capturing variables in Rust.
+
+▪ Applying iterators and closures to practical examples.
+
+| link:./chapter_10/chapter-10.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_10/chapter-10.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter_10/chapter-10.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 11
+| Unit Testing in Rust
+| 32
+|
+▪ Writing test functions and test modules in Rust.
+
+▪ Executing tests and understanding test results.
+
+▪ Practicing Test-driven development (TDD) in Rust
+
+| link:./chapter_11/chapter-11.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_11/chapter-11.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter_11/chapter-11.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 12
+| Network Programming
+| 37
+|
+▪ Building networked applications with Rust.
+
+▪ Working with TCP and UDP communication.
+
+▪ Managing asynchronous network operations with async/await.
+
+| link:./chapter_12/chapter-12.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_12/chapter-12.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter_12/chapter-12.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 13
+| Unsafe Code
+| 35
+|
+▪ What is unsafe code in Rust and when is it necessary?
+
+▪ Scenarios where developers might opt for unsafe blocks.
+
+▪ Balancing performance and safety considerations.
+
+▪ Real-world examples showcasing the need for unsafe code.
+
+▪ Best practices for using unsafe code.
+
+▪ Memory safety violations in unsafe code.
+
+▪ Real-World Examples Showcasing the Need for Unsafe Code.
+
+▪ Case studies highlighting real-world consequences.
+
+▪ Risks associated with common unsafe coding practices.
+
+| link:./chapter_13/chapter-13.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_13/chapter-13.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter_13/chapter-13.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 14
+| Asynchronous Programming
+| 31
+|
+▪ Learning asynchronous programming with async/await in Rust.
+
+▪ Utilizing the Tokio library for building asynchronous applications.
+
+| link:./chapter_14/chapter-14.ipynb[image:https://img.shields.io/badge/launch-Github-181717.svg?logo=github&logoColor=white[GitHub, width=250]]
+| link:https://mybinder.org/v2/gh/wiseaidev/rust-lang-book/main?filepath=chapter_14/chapter-14.ipynb[image:https://mybinder.org/badge_logo.svg[Launch on Binder, width=250]]
+| link:https://colab.research.google.com/github/wiseaidev/rust-lang-book/blob/main/chapter_14/chapter-14.ipynb[image:https://colab.research.google.com/assets/colab-badge.svg[Open on Colab, width=250]]
+
+| 15
+| Web Assembly
+| 30
+|
+▪ Introduction to WebAssembly and its benefits.
+
+▪ Configuring Rust for WebAssembly development.
+
+▪ Integrating Rust code with JavaScript using WebAssembly.
+
+▪ Real-world Applications of Rust and WebAssembly.
+
+| link:https://wasm-crypto.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]] link:https://real-time-wasm.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]]
+| link:https://wasm-network.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]]
+| link:https://img-process.netlify.app/[image:https://api.netlify.com/api/v1/badges/8d0e4ac9-0be6-4f64-a1b6-5043a4dc2b3e/deploy-status[Netlify, width=250]]
+
+|===
+
+=== Contributing
+
+We welcome contributions to enhance this repository! To contribute, please follow the link:./CONTRIBUTING.adoc[`CONTRIBUTING.adoc`] file guidelines. Thank you for helping make this project better!
+
+=== License
+
+This project is licensed under the link:https://opensource.org/license/mit/[MIT license]. For more details, You can refer to the link:./LICENSE[`licence`] file.
+
+=== Star History
+
+link:https://star-history.com/#wiseaidev/rust-lang-book&Date[image:https://api.star-history.com/svg?repos=wiseaidev/rust-lang-book&type=Date[Star History Chart]]

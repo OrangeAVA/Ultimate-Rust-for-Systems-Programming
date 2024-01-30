@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-time Data Visualization with Rust and WebAssembly</title>
+    <style>
+      body {
+        background: #282c34;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #abb2bf;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      canvas {
+        border: 2px solid #3e4452;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        background: #2e3440;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Real-time Data Visualization with Plotters</h1>
+    <div id="chartContainer"></div>
+
+    <script type="module" defer>
+      import init, { generate_realtime_chart } from "./pkg/data_viz.js";
+
+      async function loadWasm() {
+        try {
+          await init();
+          setupRealtimeVisualization();
+        } catch (error) {
+          console.error("Failed to load WebAssembly module:", error);
+        }
+      }
+
+      function setupRealtimeVisualization() {
+        // Simulate real-time data stream
+        setInterval(() => {
+          const data = generateRandomData(10);
+          updateChart(data);
+        }, 1000);
+      }
+
+      function generateRandomData(count) {
+        const data = [];
+        for (let i = 0; i < count; i++) {
+          data.push([i, Math.random() * 100]);
+        }
+        return data;
+      }
+
+      // Function to update the chart on the canvas
+      function updateChart(data) {
+        const chartContainer = document.getElementById("chartContainer");
+        const canvas = document.createElement("canvas");
+        chartContainer.innerHTML = "";
+        chartContainer.appendChild(canvas);
+
+        const ctx = canvas.getContext("2d");
+
+        // Split the data into x_values and y_values arrays
+        const x_values = data.map((point) => point[0]);
+        const y_values = data.map((point) => point[1]);
+
+        // Convert x_values and y_values arrays to Float64Arrays
+        const xArray = new Float64Array(x_values);
+        const yArray = new Float64Array(y_values);
+
+        // Call generate_realtime_chart with the two Float64Arrays
+        const outputArray = generate_realtime_chart(xArray, yArray);
+
+        // Ensure the length is equal to 4 * width * height
+        const width = 2400;
+        const height = 700;
+        canvas.width = 1050;
+        canvas.height = height;
+        const paddedLength = 4 * width * height;
+        const paddedArray = new Uint8ClampedArray(
+          new ArrayBuffer(paddedLength)
+        );
+        paddedArray.set(outputArray);
+
+        // Create a new ImageData object with the processed data
+        const processedImageData = new ImageData(paddedArray, width, height);
+
+        // Display the processed image
+        ctx.clearRect(0, 0, width, height);
+        ctx.putImageData(processedImageData, 0, 0);
+      }
+
+      loadWasm();
+    </script>
+  </body>
+</html>

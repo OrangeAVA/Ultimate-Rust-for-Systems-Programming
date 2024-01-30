@@ -1,0 +1,9 @@
+MatchDate,Team1,Team2,Win1,Win2,Kills1,Kills2,Deaths1,Deaths2,Assists1,Assists2,Objectives1,Objectives2,TournamentImportance,Region
+2023-01-01,TeamA,TeamB,1,0,20,10,5,15,15,5,3,2,0.9,NA
+2023-01-02,TeamC,TeamD,0,1,15,20,10,5,10,15,2,3,0.8,NA
+2023-01-03,TeamA,TeamC,0,1,18,22,8,12,12,18,4,5,0.9,NA
+2023-01-04,TeamB,TeamD,1,0,25,12,6,15,20,8,4,3,0.8,NA
+2023-01-05,TeamA,TeamD,1,0,22,18,7,14,14,20,5,6,0.9,NA
+2023-01-06,TeamB,TeamC,0,1,15,25,10,8,10,20,3,4,0.8,NA
+2023-01-07,TeamA,TeamC,1,0,24,20,8,15,16,18,4,4,0.9,NA
+2023-01-08,TeamB,TeamD,1,0,20,15,6,12,12,15,3,2,0.8,NA

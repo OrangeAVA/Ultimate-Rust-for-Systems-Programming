@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Image Processing with Rust and WebAssembly</title>
+  </head>
+  <body>
+    <h1>Image Processing with Rust and WebAssembly</h1>
+    <input
+      type="file"
+      accept="image/*"
+      id="imageInput"
+      onchange="processImage()"
+    />
+    <div class="container">
+      <canvas
+        id="originalCanvas"
+        width="300"
+        height="300"
+        style="border: 1px solid #000"
+      ></canvas>
+      <canvas
+        id="processedCanvas"
+        width="300"
+        height="300"
+        style="border: 1px solid #000"
+      ></canvas>
+    </div>
+    <script type="module" defer>
+      import init, { apply_grayscale } from "./pkg/image_processing.js";
+
+      async function loadWasm() {
+        try {
+          await init();
+          window.processImage = processImage;
+        } catch (error) {
+          console.error("Failed to load WebAssembly module:", error);
+        }
+      }
+
+      function processImage() {
+        const imageInput = document.getElementById("imageInput");
+        const originalCanvas = document.getElementById("originalCanvas");
+        const processedCanvas = document.getElementById("processedCanvas");
+
+        const ctxOriginal = originalCanvas.getContext("2d");
+        const ctxProcessed = processedCanvas.getContext("2d");
+
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+          const img = new Image();
+          img.src = event.target.result;
+
+          img.onload = function () {
+            // Display the original image
+            ctxOriginal.clearRect(
+              0,
+              0,
+              originalCanvas.width,
+              originalCanvas.height
+            );
+            ctxOriginal.drawImage(
+              img,
+              0,
+              0,
+              originalCanvas.width,
+              originalCanvas.height
+            );
+
+            // Get image data from the original canvas
+            const imageData = ctxOriginal.getImageData(
+              0,
+              0,
+              originalCanvas.width,
+              originalCanvas.height
+            );
+
+            // Convert image data to grayscale using Rust WebAssembly
+            const inputArray = new Uint8Array(imageData.data);
+            const outputArray = apply_grayscale(
+              inputArray,
+              originalCanvas.width,
+              originalCanvas.height
+            );
+
+            // Create a new ImageData object with the processed data
+            const processedImageData = new ImageData(
+              new Uint8ClampedArray(outputArray),
+              originalCanvas.width,
+              originalCanvas.height
+            );
+
+            // Display the processed image
+            ctxProcessed.clearRect(
+              0,
+              0,
+              processedCanvas.width,
+              processedCanvas.height
+            );
+            ctxProcessed.putImageData(processedImageData, 0, 0);
+          };
+        };
+
+        // Read the selected image file
+        const file = imageInput.files[0];
+        reader.readAsDataURL(file);
+      }
+
+      loadWasm();
+    </script>
+  </body>
+</html>

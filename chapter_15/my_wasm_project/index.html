@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Assembly with Rust</title>
+</head>
+<body>
+    <script type="module">
+        import init, { calculate_fibonacci } from './pkg/wasm_rust.js';
+
+        async function loadWasm() {
+            try {
+                await init('/pkg/wasm_rust_bg.wasm');
+                const result = calculate_fibonacci(12);
+                console.log('Result from Web Assembly:', result);
+            } catch (error) {
+                console.error('Failed to load WebAssembly module:', error);
+            }
+        }
+        loadWasm();
+    </script>
+</body>
+</html>

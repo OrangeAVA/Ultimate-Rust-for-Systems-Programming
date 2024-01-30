@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptography with Rust and WebAssembly</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Cryptography with Rust and WebAssembly</h1>
+      <textarea
+        id="inputText"
+        placeholder="Enter text to encrypt..."
+      ></textarea>
+      <textarea
+        id="outputText"
+        placeholder="Encrypted result will appear here..."
+        readonly
+      ></textarea>
+      <button onclick="encryptData()">Encrypt</button>
+    </div>
+    <script type="module" defer>
+      import init, { encrypt } from "./pkg/crypto.js";
+
+      async function loadWasm() {
+        try {
+          await init();
+          window.encryptData = encryptData;
+        } catch (error) {
+          console.error("Failed to load WebAssembly module:", error);
+        }
+      }
+
+      function encryptData() {
+        const inputText = document.getElementById("inputText").value;
+        const key = "abcdefghijklmnop"; // Must be of length 16 chars
+
+        const inputArray = new TextEncoder().encode(inputText);
+        const keyArray = new TextEncoder().encode(key);
+        const outputArray = encrypt(inputArray, keyArray);
+
+        const outputText = new TextDecoder().decode(outputArray);
+        document.getElementById("outputText").value = outputText;
+      }
+
+      loadWasm();
+    </script>
+  </body>
+</html>
