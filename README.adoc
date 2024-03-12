@@ -1,4 +1,4 @@
-= Mastering Rust for System Programming
+= Ultimate Rust for Systems Programming
 
 [cols="4"]
 
